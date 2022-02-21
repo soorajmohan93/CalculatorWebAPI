@@ -4,7 +4,7 @@
   Subtraction, Multiplication and Division*/
 namespace CalculatorApplicationLibrary
 {
-    class Calculator
+    public class Calculator
     {
         //Method to add two numbers
         public double Add(double first, double second)
