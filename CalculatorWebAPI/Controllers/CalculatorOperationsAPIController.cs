@@ -55,6 +55,7 @@ namespace CalculatorWebAPI.Controllers
             catch (DivideByZeroException ex)
             {
                 Response.StatusCode = 400; //Bad Request Error
+                //Displaying Error message (Error text can be seen in swaggerUI)
                 Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = "Divide By Zero not Possible!! Error: " + ex;
                 return null;
             }
